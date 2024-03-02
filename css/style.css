@@ -1,20 +1,50 @@
 @font-face {
-    font-family: PaintBrush;
-    src: url(/assets/Graffitipaintbrush-21Jv.ttf);
+  font-family: PaintBrush;
+  src: url(/assets/Graffitipaintbrush-21Jv.ttf);
 }
 
 body {
-    font-family: PaintBrush;
-    font-style: italic;
-    font-size: 48px;
-    line-height: 1.25;
-    background-color:antiquewhite;
-    width: 620px;
-    margin: 40px auto 40px auto;
+  font-family: PaintBrush;
+  font-style: italic;
+  font-size: 48px;
+  line-height: 1.25;
+  background-color: antiquewhite;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
-    font-size: 10vw;
-    
-    font-style: italic;
+  font-size: 10vw;
+  font-style: italic;
+}
+
+h2 {
+  max-width: 480px;
+  font-size: 36px;
+  text-align: center;
+}
+
+section {
+  background-color: pink;
+  padding: 200px;
+}
+
+section.dark {
+  background-color: blueviolet;
+}
+
+figure {
+  max-width: 900px;
+  margin: 0 auto 0 auto;
+}
+
+figcaption {
+  margin: 24px 20% 0 0;
 }
