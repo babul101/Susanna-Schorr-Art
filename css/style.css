@@ -107,10 +107,40 @@ g.blob.in-view path {
 
 ::-webkit-scrollbar {
   width: 8px;
-  background-color: red;
-  background-image: linear-gradient(180deg, #ffffff, #f9868d, #8652ff, #ff4141, #ffffff);
+  
+  background-image: linear-gradient(180deg, #ffffff, #80C4B7, #7C8363, #D3CAE2, #ffffff);
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #000000;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.arrow {
+  
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 30px solid #000000; /* Change color as needed */
+  animation: bounce 1s infinite alternate;
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@keyframes bounce {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(15px);
+  }
 }
